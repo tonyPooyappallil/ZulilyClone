@@ -61,7 +61,7 @@ svg {
 #zulilyHeaderIn {
   width: 73%;
   margin: auto;
-  height: 100px;
+  height: 80px;
   /* background-color: bisque; */
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
@@ -124,4 +124,243 @@ svg {
 
 #zulilyHeaderHr {
   border: solid #f6f6f6 1.5px;
+}
+
+#mondayFindContainer {
+  width: 100%;
+}
+
+#mondayFindContainerIn {
+  width: 78%;
+  margin: auto;
+  height: 80px;
+  /* background-color: bisque; */
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+}
+
+#mondayFindContainerIn div {
+  margin-top: 16px;
+  /* background-color: rgb(192, 175, 144); */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border-left: 1px solid #d3d7e1;
+  text-align: center;
+  height: 20px;
+  color: rgb(71, 103, 175);
+}
+#mondayFindContainerIn :nth-child(2),
+#mondayFindContainerIn :nth-child(1) {
+  border-left: none;
+  /* background-color: black; */
+}
+
+#mondayFindContainerIn :nth-child(1) {
+  color: rgb(51, 51, 51);
+}
+
+#background-videoDIv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  margin-top: -16px;
+}
+
+#contentSectionContainer {
+  width: 74%;
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 74% 24%;
+  grid-gap: 2%;
+}
+
+#contentSectionContainer > div {
+  /* border: solid black 1px; */
+  /* height: 800px; */
+}
+
+#contentSectionLeft {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-gap: 2%;
+}
+
+#contentSectionLeft > div {
+  border: solid rgb(241, 241, 241) 1px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgb(241, 241, 241);
+}
+
+#contentSectionRight {
+  /* display: grid;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-gap: 2%; */
+}
+
+#contentSectionRight > div {
+  border: solid white 1px;
+}
+#contentSectionLeft img {
+  width: 100%;
+}
+#contentSectionRight img {
+  width: 100%;
+}
+
+#contentSectionLeft :nth-child(1n) > :nth-child(2) {
+  /* background-color: rgb(51, 51, 51); */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 12px;
+}
+
+#contentSectionLeft :nth-child(1n) > :nth-child(3) {
+  /* background-color: rgb(51, 51, 51); */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(76, 76, 76);
+  margin: 12px;
+}
+#contentSectionLeft :nth-child(1n) > :nth-child(4) :nth-child(1) {
+  float: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(135, 23, 157);
+  margin: 12px;
+}
+
+#contentSectionLeft :nth-child(1n) > :nth-child(4) :nth-child(2) {
+  float: right;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(76, 76, 76);
+  height: 20px;
+  width: 80px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 12px;
+}
+
+#contentSectionRight > :nth-child(1) {
+  background-image: url("https://cfcdn-skin.zulily.com/images/invite/invite_promo_medium.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  height: 200px;
+}
+
+#contentSectionRight > :nth-child(1) > h1 {
+  color: white;
+  margin-top: 70px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  margin-left: 10px;
+}
+#contentSectionRight > :nth-child(1) > h2 {
+  color: red;
+  margin-top: 70px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  margin-top: -40px;
+  margin-left: 10px;
+}
+#contentSectionRight > :nth-child(2) {
+  margin-top: 0px;
+  margin-left: -10px;
+  height: 50px;
+}
+#contentSectionRight > :nth-child(2) > h3 {
+  color: black;
+  margin-top: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 10px;
+}
+#contentSectionRight > :nth-child(2) h4 {
+  color: rgb(22, 103, 217);
+  margin-top: 70px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: -15px;
+  margin-left: 10px;
+}
+#contentSectionRight > :nth-child(n + 3) {
+  /* background-color: rgb(86, 86, 109); */
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 4%;
+  border-top: solid rgb(215, 215, 215) 1px;
+}
+
+#contentSectionRight > :nth-child(n + 3) :nth-child(n) {
+  /* background-color: rgb(176, 176, 224); */
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#contentSectionRight > :nth-child(n + 3) h1 {
+  /* background-color: rgb(176, 176, 224); */
+  color: rgb(32, 31, 31);
+  margin-top: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+}
+#contentSectionRight > :nth-child(n + 3) h2 {
+  /* background-color: rgb(176, 176, 224); */
+  color: rgb(23, 23, 23);
+  margin-top: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#contentSectionRight > :nth-child(n + 3) a {
+  /* background-color: rgb(176, 176, 224); */
+  /* color: rgb(37, 128, 255); */
+}
+#contentSectionRight > :last-child {
+  border-top: none;
+  display: block;
+  justify-items: center;
+}
+#contentSectionRight > :last-child a > h4 {
+  /* background-color: rgb(176, 176, 224); */
+  color: rgb(5, 89, 207);
+  margin-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
 }
