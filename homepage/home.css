@@ -54,6 +54,25 @@ svg {
   position: relative;
   top: 5px;
 }
+.clear {
+  /* clear: both; */
+}
+.sticky-header {
+  width: 100%;
+  /* height: 50px; */
+  /* background: orange; */
+  /* position: fixed; */
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  /* left: 0; */
+  /* width: 100%; */
+  background-color: white;
+  scroll-behavior: smooth;
+  border-bottom: solid rgb(246, 246, 246) 3px;
+}
 
 #zulilyHeader {
   width: 100%;
@@ -363,4 +382,235 @@ svg {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+}
+#discoverLabel {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 32px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  line-height: 35.2px;
+  margin-bottom: 30px;
+}
+
+div.scroll {
+  margin: auto;
+  padding: 4px;
+  /* background-color: #08c708; */
+  width: 75%;
+  height: 300px;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+
+  /* border: solid black 1px; */
+}
+div.scroll img {
+  width: 190px;
+  padding: 10px;
+}
+#slideLeft {
+  transform: rotate(90deg);
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 80px;
+}
+#slideRight {
+  transform: rotate(-90deg);
+  margin-left: 74.2%;
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 80px;
+}
+#slideButtonDiv {
+  margin-left: 12%;
+  margin-top: -170px;
+}
+#belowScrollingDiv {
+  /* background-color: turquoise; */
+  width: 73%;
+  margin: auto;
+  margin-top: 140px;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 1%;
+  justify-content: center;
+}
+/* 
+.belowScrollingDivItems {
+  border: solid blue 1px;
+} */
+.belowScrollingDivItems img {
+  width: 100%;
+}
+
+#belowScrollingDiv > :nth-child(1n) > :nth-child(2) {
+  /* background-color: rgb(51, 51, 51); */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 12px;
+}
+#belowScrollingDiv :nth-child(1n) > :nth-child(3) {
+  /* background-color: rgb(51, 51, 51); */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(76, 76, 76);
+  margin: 12px;
+}
+#belowScrollingDiv :nth-child(1n) > :nth-child(4) :nth-child(1) {
+  float: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(135, 23, 157);
+  margin: 12px;
+}
+#belowScrollingDiv :nth-child(1n) > :nth-child(4) :nth-child(2) {
+  float: right;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(76, 76, 76);
+  height: 20px;
+  width: 80px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 12px;
+}
+
+#otherCategoriesEnd {
+  width: 71%;
+  margin: auto;
+  background-color: rgb(247, 247, 247);
+  padding: 25px;
+  height: 400px;
+}
+
+#otherCategoriesEnd1 {
+  font-size: 32px;
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-bottom: 15px;
+  border-bottom: solid rgb(215, 215, 215) 1px;
+}
+#otherCategoriesEnd2 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 16.65% 16.65% 16.65% 16.65% 16.65% 16.65%;
+}
+#otherCategoriesEnd2 div {
+  /* border: solid black 1px; */
+  /* height: 20px; */
+  padding-bottom: 25px;
+  width: 80%;
+  color: rgb(9, 9, 9);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#spacer {
+  height: 20px;
+}
+#footerMain {
+  height: 550px;
+  width: 100%;
+  background-color: rgb(92, 49, 117);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+#footer1 {
+  width: 73%;
+  margin: auto;
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
+}
+
+#footer1 div {
+  /* background-color: burlywood;
+  height: 100px; */
+  margin: 2px;
+}
+#creditCardIcon {
+  background-image: url(https://cfcdn-skin.zulily.com/images/icon-credit-card.png);
+  width: 23px;
+  height: 16px;
+  display: inline-block;
+}
+#footer1 h1 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#footer1 h2 {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  /* height: 50px; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.fa {
+  padding: 0px;
+  font-size: 25px;
+  margin-top: -15px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 2px; */
+  color: white;
+}
+
+#footer1 > :nth-child(5) > :nth-child(3) {
+  font-size: 24px;
+  font-weight: 400;
+}
+.fa-mobile {
+  font-size: 32px;
+}
+#footerZulily {
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  fill: white;
+}
+.afterLogo {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-family: Belltown, Helvetica, Arial, sans-serif;
+  margin-top: 20px;
+}
+.afterLogo1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  font-family: Belltown, Helvetica, Arial, sans-serif;
 }
