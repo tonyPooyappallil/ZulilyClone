@@ -24,3 +24,7 @@ buttonRight.onclick = function () {
 buttonLeft.onclick = function () {
   document.getElementById("slideContainer").scrollLeft -= 950;
 };
+
+function nasaBuy() {
+  window.location.href = "nasa.html";
+}

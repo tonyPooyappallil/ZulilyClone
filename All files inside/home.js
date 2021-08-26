@@ -37,3 +37,13 @@ bdy.onscroll = function () {
 function goToToyShop() {
   window.location.href = "toyshop.html";
 }
+
+var products = [
+  {
+    pId: 00,
+    name: "LEGO® Creator Expert 10283 NASA Space Shuttle Discovery",
+    price: 199.95,
+    image:
+      "https://cfcdn.zulily.com/images/cache/product/318x1000/480923/zu96340084_main_tm1626796516.jpg",
+  },
+];
