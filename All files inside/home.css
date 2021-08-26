@@ -70,7 +70,7 @@ svg {
   /* left: 0; */
   /* width: 100%; */
   background-color: white;
-  scroll-behavior: smooth;
+
   border-bottom: solid rgb(246, 246, 246) 3px;
 }
 
@@ -441,10 +441,12 @@ div.scroll img {
   grid-gap: 1%;
   justify-content: center;
 }
-/* 
+
 .belowScrollingDivItems {
-  border: solid blue 1px;
-} */
+  border: solid rgb(241, 241, 241) 1px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgb(241, 241, 241);
+}
 .belowScrollingDivItems img {
   width: 100%;
 }
@@ -499,6 +501,7 @@ div.scroll img {
   background-color: rgb(247, 247, 247);
   padding: 25px;
   height: 400px;
+  margin-top: 40px;
 }
 
 #otherCategoriesEnd1 {
@@ -529,7 +532,7 @@ div.scroll img {
   height: 20px;
 }
 #footerMain {
-  height: 550px;
+  height: 650px;
   width: 100%;
   background-color: rgb(92, 49, 117);
   margin: 0;
@@ -552,10 +555,17 @@ div.scroll img {
 }
 #creditCardIcon {
   background-image: url(https://cfcdn-skin.zulily.com/images/icon-credit-card.png);
-  width: 23px;
-  height: 16px;
+  width: 26px;
+  height: 15px;
   display: inline-block;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  margin-top: -15px;
+  padding: 0px;
 }
+
 #footer1 h1 {
   color: white;
   margin-bottom: 30px;
@@ -568,6 +578,7 @@ div.scroll img {
 #footer1 h2 {
   color: white;
   font-size: 16px;
+  margin-top: 20px;
   font-weight: 400;
   /* height: 50px; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -597,6 +608,7 @@ div.scroll img {
   margin: auto;
   text-align: center;
   fill: white;
+  margin-top: 40px;
 }
 .afterLogo {
   text-align: center;
