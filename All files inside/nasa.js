@@ -14,5 +14,19 @@ bdy.onscroll = function () {
 };
 
 function basket() {
+  addToCart(0);
+
   window.location.href = "basket.html";
+}
+
+function addToCart(n) {
+  if (JSON.parse(localStorage.getItem("cart")) == null) {
+    localStorage.setItem("cart", JSON.stringify([]));
+  }
+
+  var allProductsArray = JSON.parse(localStorage.getItem("allProducts"));
+  console.log(allProductsArray);
+  var cartArray = JSON.parse(localStorage.getItem("cart"));
+  cartArray.push(allProductsArray[n]);
+  localStorage.setItem("cart", JSON.stringify(cartArray));
 }

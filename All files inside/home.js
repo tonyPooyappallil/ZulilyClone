@@ -47,3 +47,7 @@ var products = [
       "https://cfcdn.zulily.com/images/cache/product/318x1000/480923/zu96340084_main_tm1626796516.jpg",
   },
 ];
+
+if (JSON.parse(localStorage.getItem("allProducts")) == null) {
+  localStorage.setItem("allProducts", JSON.stringify(products));
+}

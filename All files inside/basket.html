@@ -67,7 +67,7 @@
     <div id="sticky-header" class="sticky-header">
       <div id="zulilyHeader">
         <div id="zulilyHeaderIn">
-          <div>Zulily</div>
+          <div onclick="location.href='home.html'">Zulily</div>
           <div>New Today</div>
           <div>Ends Soon</div>
           <div>
@@ -101,7 +101,7 @@
           <div>
             <input type="text" placeholder="Search" />
           </div>
-          <div id="basket">Basket</div>
+          <div onclick="location.href='basket.html'" id="basket">Basket</div>
         </div>
       </div>
     </div>
@@ -111,14 +111,15 @@
     <div id="contentContainer">
       <div id="liveCartcontainer">
         <h1>Shopping Basket</h1>
+        <div id="liveCart"></div>
       </div>
       <div id="checkoutContainer">
         <div><button>continue shopping</button></div>
         <div>
           <h1>Order summary</h1>
           <div>
-            <h2 id="subTotal">Subtotal (1 item)</h2>
-            <h2 id="SubAmount">$199.95</h2>
+            <h2 id="subTotal">Subtotal (<span id="itemscountSpan"></span>)</h2>
+            <h2 id="SubAmount">$<span id="totalPriceSpan"></span></h2>
           </div>
 
           <div><button>proceed to checkout</button></div>
