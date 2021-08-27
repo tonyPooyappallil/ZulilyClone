@@ -61,7 +61,8 @@
         <div>New Today</div>
         <div>Ends Soon</div>
         <div>
-          Shop by Category
+                    
+          <!-- Shop by Category
           <svg
             width="20"
             height="20"
@@ -72,7 +73,38 @@
               d="M 165 565C 165 565 465 265 465 265C 484 245 516 245 535 265C 535 265 835 565 835 565C 855 584 856 616 836 636C 816 656 784 655 765 635C 765 635 500 371 500 371C 500 371 235 635 235 635C 221 650 200 655 181 647C 162 639 150 621 150 601C 150 587 155 574 165 565C 165 565 165 565 165 565"
               transform="rotate(180,500,500)"
             />
-          </svg>
+          </svg> -->
+          <div class="dropdown">
+            <button onmouseover="myFunction()" class="dropbtn">Shop by Category
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 1000 600"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M 165 565C 165 565 465 265 465 265C 484 245 516 245 535 265C 535 265 835 565 835 565C 855 584 856 616 836 636C 816 656 784 655 765 635C 765 635 500 371 500 371C 500 371 235 635 235 635C 221 650 200 655 181 647C 162 639 150 621 150 601C 150 587 155 574 165 565C 165 565 165 565 165 565"
+                  transform="rotate(180,500,500)"
+                />
+              </svg>
+    </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Women</a>
+              <a href="#">Women - Plus</a>
+              <a href="#">Home & Garden</a>
+              <a href="#">Beauty & Wellness</a>
+              <a href="#">Toys & Games</a>
+              <a href="#">Baby & Maternity</a>
+              <a href="#">Men</a>
+              <a onclick="sunClicked()" href="#">Sunglasses</a>
+              <a href="#">Grocery & Pantry</a>
+              <a href="#">Personalized</a>
+              <a href="toyshop.html">Toy Shop</a>
+              <a href="#">Electronics</a>
+              <a href="#">Books & Media</a>            </div>
+              
+          </div>
+
         </div>
         <div>
           Shop by Size
@@ -98,7 +130,9 @@
 
     <hr id="zulilyHeaderHr" />
 
-    <div id="mondayFindContainer">
+    <div id="toShowCategory"></div>
+
+    <div class="hideForCat" id="mondayFindContainer">
       <div id="mondayFindContainerIn">
         <div>Monday Finds :</div>
         <div>Melissa & Doug Under $10</div>
@@ -109,7 +143,7 @@
         <div>BOXED Under $20</div>
       </div>
     </div>
-    <div id="background-videoDIv">
+    <div class="hideForCat" id="background-videoDIv">
       <video
         id="background-video"
         autoplay
@@ -125,7 +159,7 @@
       </video>
     </div>
 
-<div id="contentSectionContainer" >
+<div  class="hideForCat" id="contentSectionContainer" >
     <div id="contentSectionLeft" >
         <div  class="homePageItems">
       

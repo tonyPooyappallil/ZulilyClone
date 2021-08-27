@@ -61,6 +61,7 @@ function showCart() {
   } else {
     document.getElementById("itemscountSpan").innerHTML = `${itemsCount} items`;
   }
+  totalPrice = totalPrice.toFixed(2);
   document.getElementById("totalPriceSpan").innerHTML = totalPrice;
 
   //   alert(itemsCount);
