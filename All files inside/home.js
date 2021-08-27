@@ -141,6 +141,9 @@ toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {
@@ -302,4 +305,132 @@ function passwordClicked() {
   };
   users.push(user);
   localStorage.setItem("userData", JSON.stringify(users));
+}
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+var arr = [];
+var mainArr = [];
+var searchInput;
+function search() {
+  var prodArr = JSON.parse(localStorage.getItem("allProducts"));
+  //console.log(prodArr[0].name);
+  setInterval(function () {
+    searchInput = document.getElementById("searchbar").value;
+    // console.log("never endinf search");
+    //console.log(searchInput);
+    var div = document.getElementById("myDropdown2");
+    div.innerHTML = "";
+    if (searchInput != "") {
+      arr = [];
+      mainArr = [];
+      for (var i = 0; i < prodArr.length; i++) {
+        if (prodArr[i].name.includes(searchInput)) {
+          //console.log(prodArr[i].name, searchInput);
+          arr.push(prodArr[i].name);
+          mainArr.push(prodArr[i]);
+        }
+      }
+      console.log(arr);
+      var itemDiv;
+      arr.forEach((element) => {
+        itemDiv = document.createElement("div");
+        var item = document.createElement("h1");
+        item.innerHTML = element;
+        console.log(element);
+        itemDiv.append(item);
+
+        div.append(itemDiv);
+      });
+    }
+  }, 100);
+}
+
+var input = document.getElementById("searchbar");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function (event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    alert(mainArr + "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq");
+    showSearchCategory();
+  }
+});
+
+function showSearchCategory() {
+  var toHide = document.getElementsByClassName("hideForCat");
+  var i;
+  //console.log(toHide);
+  for (i = 0; i < toHide.length; i++) {
+    // console.log(toHide[i].id);
+    toHide[i].style.display = "none";
+  }
+
+  // var cartArray = JSON.parse(localStorage.getItem("allProducts"));
+  // cartArray.shift();
+  // // cartArray.pop();
+  // console.log(cartArray);
+  //   all items inside cart in the above array
+  var cartdiv = document.getElementById("toShowCategory");
+
+  cartdiv.innerHTML = "";
+
+  // above div is where we have to append
+
+  // var itemsCount = cartArray.length;
+  // var totalPrice = 0;
+
+  mainArr.forEach((element) => {
+    var div = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = element.image;
+    var div1 = document.createElement("div");
+    div1.append(img);
+
+    var pName = document.createElement("p");
+    pName.innerHTML = element.name;
+
+    // var pQty = document.createElement("p");
+    // pQty.innerHTML = "QTY: 1";
+
+    var div2 = document.createElement("div");
+
+    var div_2 = document.createElement("div");
+    div_2.append(pName);
+
+    var pPrice = document.createElement("p");
+    pPrice.innerHTML = "$" + element.price;
+    // totalPrice += Number(element.price);
+    // console.log(totalPrice);
+    var btn = document.createElement("button");
+    btn.innerHTML = "add to basket";
+    btn.onclick = function () {
+      console.log("clickedremove" + element.pId);
+      addToCart(element.pId);
+    };
+    var div_3 = document.createElement("div");
+    div_3.append(pPrice, btn);
+    div2.append(div_2, div_3);
+    div.append(div1, div2);
+
+    cartdiv.append(div);
+  });
+  var spacer = document.createElement("div");
+  // spacer.style.backgroundColor = "red";
+  spacer.style.height = "100px";
+  cartdiv.append(spacer);
+  // console.log(itemsCount);
+  // if (itemsCount == 1) {
+  //   document.getElementById("itemscountSpan").innerHTML = "1 item";
+  // } else {
+  //   document.getElementById("itemscountSpan").innerHTML = `${itemsCount} items`;
+  // }
+  // document.getElementById("totalPriceSpan").innerHTML = totalPrice;
+
+  //
 }
