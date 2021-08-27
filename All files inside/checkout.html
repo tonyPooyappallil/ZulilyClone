@@ -72,7 +72,7 @@
     <div id="sticky-header" class="sticky-header">
       <div id="zulilyHeader">
         <div id="zulilyHeaderIn">
-          <div onclick="location.href='home.html'">Zulily</div>
+          <div  class="hoverCss" onclick="location.href='home.html'">Zulily</div>
           <div>New Today</div>
           <div>Ends Soon</div>
           <div>
@@ -156,9 +156,10 @@
         <option value="Ireland">Ireland</option>
         <option value="France">France</option>
     </select>
-    <input type="submit">
+    <input  class="hoverCss" onclick="showAddress()" type="submit">
 </div>
 </form>
+
 </div>
 
 
@@ -173,8 +174,9 @@
 
 
 </form>
-
-
+<div id="showAddress" >
+    
+</div>
       </div>
       <div id="checkoutContainer">
         <div></div>
@@ -187,14 +189,14 @@
           <div id="couponDiv">
             <h1><i class="fa fa-gift" ></i></i> use a promo code</h1>
            <div id="inpDiv"><input id="promoCode" type="text">
-        <button onclick="promo()">apply</button>
+        <button  class="hoverCss" onclick="promo()">apply</button>
         
         </div>
             
            
           </div>
           <div class="paymentDiv">
-            <button onclick="pay()">
+            <button  class="hoverCss" onclick="pay()">
               Pay
             </button>
           </div>

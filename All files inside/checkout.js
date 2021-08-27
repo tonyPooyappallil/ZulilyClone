@@ -41,13 +41,16 @@ function pay() {
     alert("Please provide Shipping address");
     return;
   }
-  alert("congratulations! Payment Successfull");
+  setTimeout(function () {
+    alert("congratulations! Payment Successfull");
+  }, 3000);
 }
 if (JSON.parse(localStorage.getItem("addressData")) == null) {
   localStorage.setItem("addressData", JSON.stringify([]));
 }
 function addressForm(e) {
   e.preventDefault();
+  //   alert(4444444444);
   var values = document.getElementsByClassName("address");
 
   var addressSet = {
@@ -59,10 +62,38 @@ function addressForm(e) {
     postalCode: values[5].value,
     country: values[6].value,
   };
-  console.log(addressSet);
+  //console.log(addressSet);
   document.getElementById("adressformform").reset();
 
   var addressArray = JSON.parse(localStorage.getItem("addressData"));
   addressArray.push(addressSet);
   localStorage.setItem("addressData", JSON.stringify(addressArray));
+}
+
+function showAddress() {
+  setTimeout(function () {
+    var showAddressDiv = document.getElementById("showAddress");
+    var addressArray = JSON.parse(localStorage.getItem("addressData"));
+    console.log(addressArray[0].name);
+    var div = document.createElement("div");
+    var p1 = document.createElement("p");
+    p1.innerHTML = addressArray[0].name;
+    var p2 = document.createElement("p");
+    p2.innerHTML = addressArray[0].addressLine1;
+    var p3 = document.createElement("p");
+    p3.innerHTML = addressArray[0].addressLine2;
+    var p4 = document.createElement("p");
+    p4.innerHTML = addressArray[0].city;
+
+    var p5 = document.createElement("p");
+    p5.innerHTML = addressArray[0].state;
+    var p6 = document.createElement("p");
+    p6.innerHTML = addressArray[0].postalCode;
+    var p7 = document.createElement("p");
+    p7.innerHTML = addressArray[0].country;
+    var p8 = document.createElement("h1");
+    p8.innerHTML = "Shipping To";
+    showAddressDiv.innerHTML = "";
+    showAddressDiv.append(p8, p1, p2, p3, p4, p5, p6, p7);
+  }, 200);
 }

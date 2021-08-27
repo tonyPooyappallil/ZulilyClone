@@ -209,6 +209,7 @@ function showCategory() {
     // console.log(totalPrice);
     var btn = document.createElement("button");
     btn.innerHTML = "add to basket";
+    btn.classList.add("hoverCss");
     btn.onclick = function () {
       console.log("clickedremove" + element.pId);
       addToCart(element.pId);
@@ -356,7 +357,7 @@ input.addEventListener("keyup", function (event) {
     // Cancel the default action, if needed
     event.preventDefault();
     // Trigger the button element with a click
-    alert(mainArr + "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq");
+    // alert(mainArr + "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq");
     showSearchCategory();
   }
 });
@@ -409,6 +410,7 @@ function showSearchCategory() {
     // console.log(totalPrice);
     var btn = document.createElement("button");
     btn.innerHTML = "add to basket";
+    btn.classList.add("hoverCss");
     btn.onclick = function () {
       console.log("clickedremove" + element.pId);
       addToCart(element.pId);

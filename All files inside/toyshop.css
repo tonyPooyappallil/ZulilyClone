@@ -451,3 +451,6 @@ svg {
   color: white;
   font-family: Belltown, Helvetica, Arial, sans-serif;
 }
+.hoverCss:hover {
+  cursor: pointer;
+}
