@@ -23,9 +23,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="toyshop.css" />
     <link rel="stylesheet" href="basket.css" />
-    <title>Shopping Basket | Zulily</title>
+    <link rel="stylesheet" href="checkout.css" />
+    <title>Checkout | Zulily</title>
   </head>
   <body id="bdy">
     <div id="header1">
@@ -108,30 +113,97 @@
 
     <hr id="zulilyHeaderHr" />
     <!-- header until here------------------------------------------------------------------------------------------ -->
-    <div id="contentContainer">
-      <div id="liveCartcontainer">
-        <h1>Shopping Basket</h1>
-        <div id="liveCart"></div>
+
+    <div id="mainContainer">
+      <div id="adressContainer">
+
+<h1>Shipping address</h1>
+<form id="adressformform"   onsubmit="addressForm(event)" action="">
+<div id="formDiv">
+
+   
+
+<div><h2 for="">Name</h2>
+    <h2 for="">Address Line 1</h2>
+    <h2 for="">Address Line 2</h2>
+    <h2 for="">City</h2>
+    <h2 for="">State/Region</h2>
+    <h2 for="">Postal Code</h2>
+    <h2 for="">Country</h2>
+</div>
+<div>
+    <input class="address" type="text">
+
+    <input class="address" type="text">
+
+
+    <input class="address" type="text">
+
+
+    <input class="address" type="text">
+    
+
+    <input class="address" type="text">
+
+
+    <input class="address" type="text">
+
+    
+    <select name="" class="address">
+        <option value="United States">United States</option>
+        <option value="Canada">Canada</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="Ireland">Ireland</option>
+        <option value="France">France</option>
+    </select>
+    <input type="submit">
+</div>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
       </div>
       <div id="checkoutContainer">
-        <div><button>continue shopping</button></div>
+        <div></div>
         <div>
           <h1>Order summary</h1>
           <div>
             <h2 id="subTotal">Subtotal (<span id="itemscountSpan"></span>)</h2>
             <h2 id="SubAmount">$<span id="totalPriceSpan"></span></h2>
           </div>
-
-          <div>
-            <button onclick="location.href='checkout.html'">
-              proceed to checkout
+          <div id="couponDiv">
+            <h1><i class="fa fa-gift" ></i></i> use a promo code</h1>
+           <div id="inpDiv"><input id="promoCode" type="text">
+        <button onclick="promo()">apply</button>
+        
+        </div>
+            
+           
+          </div>
+          <div class="paymentDiv">
+            <button onclick="pay()">
+              Pay
             </button>
           </div>
         </div>
       </div>
     </div>
+
     <!-- footer-------------------------------------------------------------------------- -->
-    <div id="otherCategoriesEnd">
+    <!-- <div id="otherCategoriesEnd">
       <div id="otherCategoriesEnd1">Shop Our Other Categories</div>
       <div id="otherCategoriesEnd2">
         <div>Back To School</div>
@@ -171,7 +243,7 @@
         <div>Suzanne Betro Shop</div>
         <div>Tutu & Lulu</div>
       </div>
-    </div>
+    </div> -->
 
     <div id="spacer"></div>
 
@@ -220,6 +292,7 @@
           <h2><i class="fa fa-mobile" aria-hidden="true"></i> Get Our App</h2>
         </div>
       </div>
+
       <div id="footerZulily">
         <svg
           role="img"
@@ -245,3 +318,4 @@
   </body>
 </html>
 <script src="basket.js"></script>
+<script src="checkout.js" ></script>

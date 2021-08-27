@@ -1,14 +1,14 @@
 const bdy = document.getElementById("bdy");
 const sticky = document.getElementById("sticky-header");
-console.log(444);
+//console.log(444);
 bdy.onscroll = function () {
-  console.log(window.pageYOffset);
+  //console.log(window.pageYOffset);
   if (window.pageYOffset >= 60) {
-    console.log("great than 500");
+    //console.log("great than 500");
 
     sticky.classList.add("fixed");
   } else {
-    console.log("not great than 100");
+    //console.log("not great than 100");
     sticky.classList.remove("fixed");
   }
 };
@@ -55,7 +55,7 @@ function showCart() {
 
     cartdiv.append(div);
   });
-  console.log(itemsCount);
+  //console.log(itemsCount);
   if (itemsCount == 1) {
     document.getElementById("itemscountSpan").innerHTML = "1 item";
   } else {

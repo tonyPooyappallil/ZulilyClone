@@ -215,7 +215,7 @@ svg {
   grid-template-columns: 32% 32% 32%;
   grid-gap: 3%;
   margin-bottom: 20px;
-  border-bottom: solid rgb(215, 215, 215) 1px;
+  /* border-bottom: solid rgb(215, 215, 215) 1px; */
 }
 #toShowCategory > div {
   /* height: 200px; */
@@ -224,8 +224,10 @@ svg {
   /* display: grid;
   grid-template-columns: 20% 50% 20%;
   grid-gap: 3%; */
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   /* border-bottom: solid rgb(215, 215, 215) 1px; */
+
+  /* background-color: rgb(221, 209, 209); */
 }
 
 #toShowCategory > div > :nth-child(1) {
@@ -532,14 +534,14 @@ svg {
 
 /* class for hiding --------------------------------*/
 
-.hide {
+/* .hide {
   display: none;
-}
+} */
 
 /* class for hiding ends--------------------------------*/
 #discoverLabel {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 120px;
   font-size: 32px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -779,4 +781,132 @@ div.scroll img {
   font-weight: 400;
   color: white;
   font-family: Belltown, Helvetica, Arial, sans-serif;
+}
+
+/* 
+modal------------------------------------ */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 21%;
+  height: 360px;
+}
+
+/* The Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  /* color: #000; */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content > span {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  font-family: Belltown, Helvetica, Arial, sans-serif;
+  /* margin-top: 20px; */
+}
+
+.modal-content > h1 {
+  /* text-align: center; */
+  font-size: 22px;
+  font-weight: 300;
+  color: rgb(135, 24, 157);
+  margin-top: 80px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.modal-content > h2 {
+  /* text-align: center; */
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  margin-top: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.modal-content > h3 {
+  /* text-align: center; */
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  margin-top: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.modal-content > input {
+  /* text-align: center; */
+  width: 98%;
+
+  height: 30px;
+  border-radius: 5px;
+  border: solid black 1px;
+}
+.modal-content > button {
+  /* text-align: center; */
+  width: 100%;
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+
+  height: 40px;
+  background-color: rgb(135, 24, 157);
+  border-radius: 5px;
+  border: none;
+}
+
+.modal-content > hr {
+  /* text-align: center; */
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+
+  border: solid rgb(206, 206, 206) 1px;
+}
+.modal-content > h4 {
+  /* text-align: center; */
+  margin-top: 20px;
+  color: rgb(112, 112, 112);
+  font-size: 12px;
+  font-weight: 400;
+
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#myModal2 h2 {
+  margin-top: 80px;
+  margin-bottom: -80px;
+}
+#myModal2 h1 {
+  margin-top: 90px;
 }

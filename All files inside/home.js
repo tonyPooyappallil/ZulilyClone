@@ -109,6 +109,27 @@ var products = [
     image:
       "https://cfcdn.zulily.com/images/cache/product/290x348/478918/zu94173403_main_tm1615592441.jpg",
   },
+  {
+    pId: 10,
+    name: "Ray-Ban | Arista Ray-Ban Rx Aviator Eyeglasses - Unisex",
+    price: 84.99,
+    image:
+      "https://cfcdn.zulily.com/images/cache/product/290x348/495225/zu96779932_main_tm1623681056.jpg",
+  },
+  {
+    pId: 11,
+    name: "Ray-Ban | Black Gradient Aviator Sunglasses - Unisex",
+    price: 169.99,
+    image:
+      "https://cfcdn.zulily.com/images/cache/product/290x348/262566/zu52686661_main_tm1509732934.jpg",
+  },
+  {
+    pId: 12,
+    name: "Salvatore Ferragamo | Rose & Goldtone Cat-Eye Sunglasses",
+    price: 69.55,
+    image:
+      "https://cfcdn.zulily.com/images/cache/product/290x348/491753/zu96557770_main_tm1622741101.jpg",
+  },
 ];
 
 if (JSON.parse(localStorage.getItem("allProducts")) == null) {
@@ -150,6 +171,8 @@ function sunClicked() {
 function showCategory() {
   var cartArray = JSON.parse(localStorage.getItem("allProducts"));
   cartArray.shift();
+  // cartArray.pop();
+  console.log(cartArray);
   //   all items inside cart in the above array
   var cartdiv = document.getElementById("toShowCategory");
   cartdiv.innerHTML = "";
@@ -194,6 +217,11 @@ function showCategory() {
 
     cartdiv.append(div);
   });
+
+  var spacer = document.createElement("div");
+  // spacer.style.backgroundColor = "red";
+  spacer.style.height = "100px";
+  cartdiv.append(spacer);
   // console.log(itemsCount);
   // if (itemsCount == 1) {
   //   document.getElementById("itemscountSpan").innerHTML = "1 item";
@@ -218,4 +246,60 @@ function addToCart(e) {
   }
 
   localStorage.setItem("cart", JSON.stringify(cartArray));
+}
+
+//---------------------login and modal
+
+if (JSON.parse(localStorage.getItem("userData")) == null) {
+  localStorage.setItem("userData", JSON.stringify([]));
+}
+
+var users = JSON.parse(localStorage.getItem("userData"));
+
+// Get the modal
+var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
+//modal2.style.display = "block";
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+
+if (users.length == 0) {
+  modal.style.display = "block";
+}
+
+// btn.onclick = function () {};
+
+// When the user clicks on <span> (x), close the modal
+// span.onclick = function () {
+//   modal.style.display = "none";
+// };
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// };
+var emailId;
+var password;
+function mailClicked() {
+  emailId = document.getElementById("emailId").value;
+  modal.style.display = "none";
+  modal2.style.display = "block";
+}
+function passwordClicked() {
+  password = document.getElementById("password").value;
+  modal2.style.display = "none";
+  var user = {
+    mailId: emailId,
+    password: password,
+  };
+  users.push(user);
+  localStorage.setItem("userData", JSON.stringify(users));
 }
