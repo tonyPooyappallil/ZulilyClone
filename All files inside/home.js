@@ -327,7 +327,7 @@ function search() {
       arr = [];
       mainArr = [];
       for (var i = 0; i < prodArr.length; i++) {
-        if (prodArr[i].name.includes(searchInput)) {
+        if (prodArr[i].name.toLowerCase().includes(searchInput.toLowerCase())) {
           //console.log(prodArr[i].name, searchInput);
           arr.push(prodArr[i].name);
           mainArr.push(prodArr[i]);
