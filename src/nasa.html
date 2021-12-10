@@ -24,8 +24,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="toyshop.css" />
-    <link rel="stylesheet" href="basket.css" />
-    <title>Shopping Basket | Zulily</title>
+    <link rel="stylesheet" href="nasa.css" />
+    <title>
+      LEGO® Creator Expert 10283 NASA Space Shuttle Discovery | Zulily
+    </title>
   </head>
   <body id="bdy">
     <div id="header1">
@@ -67,7 +69,7 @@
     <div id="sticky-header" class="sticky-header">
       <div id="zulilyHeader">
         <div id="zulilyHeaderIn">
-          <div class="hoverCss" onclick="location.href='home.html'">Zulily</div>
+          <div onclick="location.href='index.html'">Zulily</div>
           <div>New Today</div>
           <div>Ends Soon</div>
           <div>
@@ -108,28 +110,55 @@
 
     <hr id="zulilyHeaderHr" />
     <!-- header until here------------------------------------------------------------------------------------------ -->
-    <div id="contentContainer">
-      <div id="liveCartcontainer">
-        <h1>Shopping Basket</h1>
-        <div id="liveCart"></div>
+    <div id="backToLego">< Back to LEGO®</div>
+    <div id="legoMainContainer">
+      <div>
+        <img
+          src="https://cfcdn.zulily.com/images/cache/product/1000x1201/480923/zu96340084_main_tm1626796516.jpg"
+          alt=""
+        />
       </div>
-      <div id="checkoutContainer">
-        <div><button>continue shopping</button></div>
-        <div>
-          <h1>Order summary</h1>
-          <div>
-            <h2 id="subTotal">Subtotal (<span id="itemscountSpan"></span>)</h2>
-            <h2 id="SubAmount">$<span id="totalPriceSpan"></span></h2>
-          </div>
+      <div>
+        <h1>
+          <span>♡</span>LEGO® Creator Expert 10283 NASA Space Shuttle Discovery
+        </h1>
 
-          <div>
-            <button class="hoverCss" onclick="location.href='checkout.html'">
-              proceed to checkout
-            </button>
-          </div>
-        </div>
+        <h2>$199.95</h2>
+        <hr />
+        <button class="hoverCss" onclick="basket()" id="addToBasket">
+          add to basket
+        </button>
+        <hr />
+        <h3>Product Description:</h3>
+        <h4>
+          Loaded with features straight from the real space shuttle, this
+          delightfully detailed LEGO® set is just the thing to challenge your
+          favorite NASA fan.
+        </h4>
+        <h5>Features</h5>
+        <ul>
+          <li>
+            Includes Space Shuttle Discovery and the Hubble Space Telescope
+          </li>
+          <li>
+            Opening payload bay, retractable landing gear, opening cockpit,
+            moving elevons, space arm and 5 seats for the crew
+          </li>
+          <li>Telescope sports moving solar panels and an aperture door</li>
+          <li>Multiple display stands</li>
+        </ul>
+        <h5>Product Details</h5>
+        <ul>
+          <li>Item 10283</li>
+          <li>2354 pieces 21'' W x 8.5'' H x 13.5'' D</li>
+          <li>ABS plastic</li>
+          <li>Recommended for ages 18 years and up</li>
+          <li>Made in Denmark</li>
+        </ul>
       </div>
     </div>
+    <!-- <i class="fa fa-heart-o" style="font-size: 24px"></i> -->
+
     <!-- footer-------------------------------------------------------------------------- -->
     <div id="otherCategoriesEnd">
       <div id="otherCategoriesEnd1">Shop Our Other Categories</div>
@@ -244,4 +273,4 @@
     </div>
   </body>
 </html>
-<script src="basket.js"></script>
+<script src="nasa.js"></script>
