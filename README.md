@@ -1,6 +1,7 @@
 # ZulilyClone
-Clone of Zulily E-Commerce site
-Deployed at - https://zulily-clone.netlify.app/index.html
+<p>Clone of Zulily E-Commerce site
+ </p> <p> 
+Deployed at - https://zulily-clone.netlify.app/index.html</p>
 
 Zulily, is an American e-commerce company, that sells clothing, footwear, toys, infant gear and home products.
 
